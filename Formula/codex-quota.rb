@@ -5,21 +5,21 @@
 class CodexQuota < Formula
   desc "Terminal account switcher and quota monitor for Codex/OpenCode"
   homepage "https://github.com/nam98nd16/codex-quota"
-  version "0.3.43"
+  version "0.3.44"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nam98nd16/codex-quota/releases/download/v0.3.43/codex-quota_0.3.43_darwin_amd64.tar.gz"
-      sha256 "355065ffa7cac1d251e1649aec310b9026006cd912ad7e60807b4f6d61d63739"
+      url "https://github.com/nam98nd16/codex-quota/releases/download/v0.3.44/codex-quota_0.3.44_darwin_amd64.tar.gz"
+      sha256 "982a8941049b869af29a2690eaeb2a927dc0c9bb96509eec4679a6ae2d8a4ebf"
 
       define_method(:install) do
         bin.install "cq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nam98nd16/codex-quota/releases/download/v0.3.43/codex-quota_0.3.43_darwin_arm64.tar.gz"
-      sha256 "941c2ecfa3ef863100059ec2e88b010982582facb714d09051133e5e3dab1251"
+      url "https://github.com/nam98nd16/codex-quota/releases/download/v0.3.44/codex-quota_0.3.44_darwin_arm64.tar.gz"
+      sha256 "ebf3826be195b6cf0e7343e20f43c9214bbbda9a50e11cb81f610e68cb9e7d57"
 
       define_method(:install) do
         bin.install "cq"
@@ -29,15 +29,15 @@ class CodexQuota < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nam98nd16/codex-quota/releases/download/v0.3.43/codex-quota_0.3.43_linux_amd64.tar.gz"
-      sha256 "f06a1d3de5327ac7f556456ebeb0d7700bae924389f5c1829b24d966f27ed626"
+      url "https://github.com/nam98nd16/codex-quota/releases/download/v0.3.44/codex-quota_0.3.44_linux_amd64.tar.gz"
+      sha256 "4eb40fb1161ee0322e15c713b95acdc5b2b577abc731d41f4595b6a39d11d6a7"
       define_method(:install) do
         bin.install "cq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nam98nd16/codex-quota/releases/download/v0.3.43/codex-quota_0.3.43_linux_arm64.tar.gz"
-      sha256 "436b59adcdea9052986d87a71b12c6ccb8ee79fd3bd14139e2f2bf8a95196cb8"
+      url "https://github.com/nam98nd16/codex-quota/releases/download/v0.3.44/codex-quota_0.3.44_linux_arm64.tar.gz"
+      sha256 "541805f5e8615d6d7babab117290b6991bf375b7ef6fad931835987b68c95800"
       define_method(:install) do
         bin.install "cq"
       end
